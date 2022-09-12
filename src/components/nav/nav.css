@@ -15,6 +15,22 @@
     transition: .5s ease;
 }
 
+.boxLinks{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 15px;
+}
+
+.link{
+    transform: scale(1.2);
+    margin: 8px;
+}
+
+.link:hover{
+    opacity: .5;
+}
+
 .nav.opened{
     visibility: visible;
     transform: translateX(0);

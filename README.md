@@ -1,5 +1,7 @@
 # Periodic Table
 
+![status](https://img.shields.io/badge/status-em%20desenvolvimento-blue)
+
 A periodic table developed for the purpose of studying CSS, Java Script and HTML using the **React.js** library.
 
 ![tableImage](https://media.discordapp.net/attachments/793891862989242440/1018934104948998174/unknown.png?width=889&height=431)

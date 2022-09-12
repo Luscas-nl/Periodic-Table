@@ -1,0 +1,104 @@
+.modalContainer{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.493);
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    height: 365px;
+    width: 365px;
+    transform: scale(0);
+    box-shadow: rgba(27, 27, 27, 0.452) 0px 5px 15px;
+    color: #070B11;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.modalContainer.show{
+    visibility: visible;
+}
+
+.modalContainer.show .modal{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.elementNumberModal{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 1.7em;
+}
+
+.titleModal{
+    font-size: 8.5em;
+    line-height: .8;
+    margin-bottom: 9px;
+}
+
+.descModal{
+    font-size: 2.45em;
+}
+
+.massModas{
+    font-size: 1.5em;
+}
+
+.eletroModal{
+    position: absolute;
+    bottom: 12px;
+}
+
+.modal.nonmetal{
+    background: linear-gradient(145deg, #61bf6b 0%, rgba(4,250,30,1) 100%);
+}
+
+.modal.noble{
+    background: linear-gradient(145deg, rgba(245,179,203,1) 0%, rgba(254,228,238,1) 100%);
+}
+
+.modal.alkali{
+    background: linear-gradient(145deg, rgba(209,32,45,1) 0%, rgba(205,83,92,1) 100%);
+}
+
+.modal.alkaline{
+    background: linear-gradient(145deg, rgba(245,167,32,1) 0%, rgba(250,195,100,1) 100%);
+}
+
+.modal.metalloid{
+    background: linear-gradient(145deg, rgba(253,207,23,1) 0%, rgba(255,224,102,1) 100%);
+}
+
+.modal.halogen{
+    background: linear-gradient(145deg, rgba(158,175,81,1) 0%, rgba(187,199,132,1) 100%);
+}
+
+.modal.metal{
+    background: linear-gradient(145deg, rgba(184,149,197,1) 0%, rgba(233,206,244,1) 100%);
+}
+
+.modal.transition{
+    background: linear-gradient(145deg, rgba(155,191,226,1) 0%, rgba(197,220,244,1) 100%);
+}
+
+.modal.lanthanoid{
+    background: linear-gradient(145deg, rgba(39,150,210,1) 0%, rgba(100,191,241,1) 100%);
+}
+
+.modal.actinoid{
+    background: linear-gradient(145deg, rgba(118,200,169,1) 0%, rgba(179,245,220,1) 100%);
+}
+
+.modal.post-transition{
+    background: linear-gradient(145deg, rgba(195,195,195,1) 0%, rgba(244,244,244,1) 100%);
+}

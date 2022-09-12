@@ -1,0 +1,61 @@
+.filterBtn{
+    background-color: transparent;
+    color: white;
+    background-color: none;
+    padding: 5px;
+    font-size: 1.3em;
+    text-align: left;
+    border: none;
+}
+
+.filterBtn::before{
+    content: " ";
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.filterBtn[type="Non Metal"]::before{
+    background-color: #61bf6b;
+}
+
+.filterBtn[type="Noble Gas"]::before{
+    background-color: #F5B3CB;
+}
+
+.filterBtn[type="Alkali Metal"]::before{
+    background-color: #D1202D;
+}
+
+.filterBtn[type="Alkaline Earth Metal"]::before{
+    background-color: #F5A720;
+}
+
+.filterBtn[type="Metalloid"]::before{
+    background-color: #fdcf17;
+}
+
+.filterBtn[type="Halogen"]::before{
+    background-color: #9eaf51;
+}
+
+.filterBtn[type="Metal"]::before{
+    background-color: #B895C5;
+}
+
+.filterBtn[type="Transition Metal"]::before{
+    background-color: #9bbfe2;
+}
+
+.filterBtn[type="Lanthanoid"]::before{
+    background-color: #2796D2;
+}
+
+.filterBtn[type="Actinoid"]::before{
+    background-color: #76C8A9;
+}
+
+.filterBtn[type="Post-Transition Metal"]::before{
+    background-color: #C3C3C3;
+}

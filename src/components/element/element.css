@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+}
+.principalContainer{
+    font-family: 'Rubik', sans-serif;
+    padding: 1.5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxElement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    height: 65px;
+    width: 65px;
+    color: white;
+}
+
+.boxElement[type="default"]{
+    opacity: 0;
+}
+
+.boxElement[type="nonmetal"]{
+    border: 2px solid #61bf6b;
+}
+
+.boxElement[type="noble gas"]{
+    border: 2px solid #F5B3CB;
+}
+
+.boxElement[type="alkali metal"]{
+    border: 2px solid #D1202D;
+}
+
+.boxElement[type="alkaline earth metal"]{
+    border: 2px solid #F5A720;
+}
+
+.boxElement[type="metalloid"]{
+    border: 2px solid #fdcf17;
+}
+
+.boxElement[type="halogen"]{
+    border: 2px solid #9eaf51;
+}
+
+.boxElement[type="metal"]{
+    border: 2px solid #B895C5;
+}
+
+.boxElement[type="transition metal"]{
+    border: 2px solid #9bbfe2;
+}
+
+.boxElement[type="lanthanoid"]{
+    border: 2px solid #2796D2;
+}
+
+.boxElement[type="actinoid"]{
+    border: 2px solid #76C8A9;
+}
+
+.boxElement[type="post-transition metal"]{
+    border: 2px solid #C3C3C3;
+}
+
+.elementNumber{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: .4em;
+}
+
+.title{
+    font-size: 1.5em;
+}
+
+.desc{
+    font-size: .45em;
+}
+
+.boxElement:hover{
+    transform: scale(1.2);
+    border: none;
+    color: #070B11;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+    transition: .5s ease;
+}
+
+.boxElement[type="nonmetal"]:hover{
+    background: linear-gradient(145deg, #61bf6b 0%, rgba(4,250,30,1) 100%);
+}
+
+.boxElement[type="noble gas"]:hover{
+    background: linear-gradient(145deg, rgba(245,179,203,1) 0%, rgba(254,228,238,1) 100%);
+}
+
+.boxElement[type="alkali metal"]:hover{
+    background: linear-gradient(145deg, rgba(209,32,45,1) 0%, rgba(205,83,92,1) 100%);
+}
+
+.boxElement[type="alkaline earth metal"]:hover{
+    background: linear-gradient(145deg, rgba(245,167,32,1) 0%, rgba(250,195,100,1) 100%);
+}
+
+.boxElement[type="metalloid"]:hover{
+    background: linear-gradient(145deg, rgba(253,207,23,1) 0%, rgba(255,224,102,1) 100%);
+}
+
+.boxElement[type="halogen"]:hover{
+    background: linear-gradient(145deg, rgba(158,175,81,1) 0%, rgba(187,199,132,1) 100%);
+}
+
+.boxElement[type="metal"]:hover{
+    background: linear-gradient(145deg, rgba(184,149,197,1) 0%, rgba(233,206,244,1) 100%);
+}
+
+.boxElement[type="transition metal"]:hover{
+    background: linear-gradient(145deg, rgba(155,191,226,1) 0%, rgba(197,220,244,1) 100%);
+}
+
+.boxElement[type="lanthanoid"]:hover{
+    background: linear-gradient(145deg, rgba(39,150,210,1) 0%, rgba(100,191,241,1) 100%);
+}
+
+.boxElement[type="actinoid"]:hover{
+    background: linear-gradient(145deg, rgba(118,200,169,1) 0%, rgba(179,245,220,1) 100%);
+}
+
+.boxElement[type="post-transition metal"]:hover{
+    background: linear-gradient(145deg, rgba(195,195,195,1) 0%, rgba(244,244,244,1) 100%);
+}
+
+
+
+
+.boxElement:hover .title{
+    font-size: 1.6em;
+}
+
+.boxElement:hover .elementNumber{
+    font-size: .5em;
+}
+
+.boxElement:hover .desc{
+    font-size: .5em;
+}
